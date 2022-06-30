@@ -1,6 +1,7 @@
 #include <stdio.h>
-int main(void) /*printing out string in c*/
+int main(void)
 {
+//initialize strings
 char str[] = "\"Programming is like building a multilingual puzzle";
 puts(str);
 return (0);
