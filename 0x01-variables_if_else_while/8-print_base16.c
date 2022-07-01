@@ -5,9 +5,12 @@
  * Return: Always 0 (Success)
  */
 int main(void)
-{	char i;
+{	int i;
 
-	for (i = 'a'; i <= 'z'; ++i)
+	for (i = '0'; i <= '9'; i++)
 		{ putchar(i); }
+	for (i = 'a'; i <= 'f'; i++)
+		{ putchar(i); }
+	putchar('\n');
 	return (0);
 }
