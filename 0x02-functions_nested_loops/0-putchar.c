@@ -1,12 +1,18 @@
-#include <stdio.h>
-#include <string.h>
+#include "main.h"
 /**
  * main - Entry point
  *
  * Return: Always 0 (Success)
  */
 int main(void)
-{
-	printf("_putchar\n");
+{	char put[] = "_putchar";
+	int i;
+
+	int lenPut = sizeof(put) / sizeof(put[0]);
+
+	for (i = 0; i < lenPut - 1; i++)
+		{ _putchar(put[i]); }
+	_putchar('\n');
+
 	return (0);
 }
