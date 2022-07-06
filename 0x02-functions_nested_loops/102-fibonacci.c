@@ -9,7 +9,7 @@ int main(void)
 	long int i1 = 1, sum, i1 = 2, imax = 50;
 	int j;
 
-	printf("%lu, %lu, ", i1 i2);
+	printf("%lu, %lu, ", i1, i2);
 	for (j = 2; j < imax; j++)
 	{
 		sum = i1 + i2;
