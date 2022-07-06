@@ -18,7 +18,7 @@ void print_to_98(int val)
 
 		for (i = val; i >= max; i--)
 		{
-			print(i)
+			print(i);
 			if (i != max)
 			{
 				_putchar(',');
