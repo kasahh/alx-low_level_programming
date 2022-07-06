@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	long int i1 = 1, sum, i1 = 2, imax = 50;
+	long int i1 = 1, sum, i2 = 2, imax = 50;
 	int j;
 
 	printf("%lu, %lu, ", i1, i2);
@@ -17,9 +17,9 @@ int main(void)
 		i2 = sum;
 		printf("%lu", sum);
 		if (j != imax - 1)
-			print(", ");
+			printf(", ");
 	}
-	printf("\n);
+	printf("\n");
 
-	return (0)
-};
+	return (0);
+}
