@@ -4,18 +4,18 @@
  * @i: value
  */
 void print(int i)
-{ 
+{
 	if (i < 0)
 	{
 		_putchar('-');
 		i = -i;
 	}
-	if (i/10)
+	if (i / 10)
 		print(i / 10);
 	_putchar(i % 10 + '0')
 }
 /**
- * more_numbers(void)
+ * more_numbers - print more numbers
  */
 void more_numbers(void)
 {
@@ -33,8 +33,7 @@ void more_numbers(void)
 				print(k);
 			}
 			k++
-		}
-		while (k < 15);
+		} while (k < 15);
 		j++;
 		_putchar('\n');
 	}
