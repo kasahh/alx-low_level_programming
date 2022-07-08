@@ -15,6 +15,6 @@ int main(void)
 		else
 			prime++;
 	}
-	print("%ld\n", prime);
+	printf("%ld\n", prime);
 	return (0);
 }
