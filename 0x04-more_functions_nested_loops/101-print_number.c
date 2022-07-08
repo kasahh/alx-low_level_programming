@@ -1,4 +1,5 @@
 #include "main.h"
+void print(int n);
 /**
  * print_number - prints number
  * @i: value to print
