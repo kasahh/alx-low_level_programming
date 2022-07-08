@@ -1,18 +1,29 @@
 #include "main.h"
-void print(int n);
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * print_number - prints number
  * @i: value to print
+ * Return: 0 if successful
  */
 void print_number(int i)
 {
+	unsigned int i1 = 0;
+
 	if (i < 0)
 	{
+		i1 = -n;
 		_putchar('-');
-		i = -i;
 	}
-
-	print(i);
+	else
+	{
+		i1 = n;
+	}
+	if (i1 / 10)
+	{
+		print_number(i1 / 10);
+	}
+	_putchar((i1 % 10) + '0');
 }
 /**
  * print - prints
