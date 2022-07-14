@@ -7,20 +7,18 @@
 char *cap_string(char *s)
 {
 	int i;
-	int j;
-	char seperators[] = ",;.!?(){}\n\t\" ";
 
 	i = 0;
 	while (s[i])
 	{
 		if (s[i] >= 'a' && s[i] <= 'z')
 		{
-			for (j = 0; seperators[j] != '\0'; j++)
+			if (s[i - 1] == ' ' || s[i - 1] == '\t' || s[i - 1] == '\n' ||
+s[i - 1] == ',' || s[i - 1] == ';' || s[i - 1] == '.' || s[i - 1] == '!'
+|| s[i - 1] == '?' || s[i - 1] == '"' || s[i - 1] == '(' || s[i - 1] == ')'
+|| s[i - 1] == '{' || s[i - 1] == '}' || i == 0)
 			{
-				if (s[i - 1] == seperators[j])
-				{
-					s[i] = s[i] - 'a' + 'A';
-				}
+				s[i] = s[i] - 'a' + 'A';
 			}
 		}
 	i++;
