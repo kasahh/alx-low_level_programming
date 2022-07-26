@@ -20,7 +20,7 @@ char *create_array(unsigned int size, char c)
 	}
 	if (arr == NULL)
 	{
-		fprintf(sterr, "error allocating memory\n");
+		fprintf(stderr, "error allocating memory\n");
 	}
 	else
 	{
