@@ -18,6 +18,10 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
+	if (arr == NULL)
+	{
+		fprintf(sterr, "error allocating memory\n");
+	}
 	else
 	{
 		i = 0;
