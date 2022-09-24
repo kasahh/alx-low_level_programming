@@ -1,9 +1,8 @@
 #include <stdio.h>
-#include <string.h>
 /**
- * main - Entry point
+ * main - print char to std err
  *
- * Return: Always 1 (Success)
+ * Return: 1 when Success
  */
 int main(void)
 {
