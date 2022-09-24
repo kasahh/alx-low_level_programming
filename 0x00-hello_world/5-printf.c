@@ -1,13 +1,13 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * main - prints to std out using printf
  *
- * Return: Always 0 (Success)
+ * Return: 0 if success
  */
 int main(void)
 {
-char note[100] = "with proper grammar, but the outcome is a piece of art,\n";
+	char str[] = "with proper grammar, but the outcome is a piece of art,";
 
-printf("%s", note);
-return (0);
+	printf("%s\n", str);
+	return (0);
 }

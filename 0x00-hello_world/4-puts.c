@@ -1,13 +1,13 @@
 #include <stdio.h>
-/**
- * main - Entry point
+/*
+ * main - puts char in string to std out
  *
- * Return: Always 0 (Success)
+ * Return: 0 when successful
  */
 int main(void)
 {
-char str[] = "\"Programming is like building a multilingual puzzle";
+	char str[] = "\"Programming is like building a multilingual puzzle";
 
-puts(str);
-return (0);
+	puts(str);
+	return (0);
 }
