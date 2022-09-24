@@ -1,5 +1,5 @@
 #include <stdio.h>
-/*
+/**
  * main - puts char in string to std out
  *
  * Return: 0 when successful
