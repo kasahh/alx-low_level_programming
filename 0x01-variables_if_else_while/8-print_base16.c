@@ -1,16 +1,20 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * main - print hex numbers
  *
- * Return: Always 0 (Success)
+ * Return: 0 if success
  */
 int main(void)
-{	int i;
+{
+	int i;
+	char j;
 
-	for (i = '0'; i <= '9'; i++)
-		{ putchar(i); }
-	for (i = 'a'; i <= 'f'; i++)
-		{ putchar(i); }
+	for (i = 0; i <= 9; i++)
+	{
+		putchar(i + '0'); }
+	for (j = 'a'; j <= 'f'; j++)
+	{
+		putchar(j); }
 	putchar('\n');
 	return (0);
 }

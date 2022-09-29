@@ -1,24 +1,29 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * main - prints combination of two numbers without repeating
  *
- * Return: Always 0 (Success)
+ * Return: 0 if success
  */
 int main(void)
-{	int i;
-	int j;
+{
+	int i, j;
 
-	for (i = 0; i < 9; i++)
-	{
-		for (j = i + 1; j < 10; j++)
-		{ putchar((i % 10) + '0');
-		putchar((j % 10) + '0');
-		if (i == 8 && j == 9)
-			continue;
-		{putchar(',');
-		putchar(' '); }
+	for (i = 0; i <= 9; i++)
+		for (j = 0; j <= 9; j++)
+		{
+			if (i != j)
+			{
+				if (i < j)
+				{
+					putchar(i + '0');
+					putchar(j + '0');
+					if (!(i == 8 && j == 9))
+					{
+						putchar(',');
+						putchar(' '); }
+					}
+			}
 		}
-	}
 	putchar('\n');
 	return (0);
 }

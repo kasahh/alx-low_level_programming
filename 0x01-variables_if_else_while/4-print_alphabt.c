@@ -1,17 +1,24 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * main - prints alphabets except q and e
  *
- * Return: Always 0 (Success)
+ * Return: 0 if success
  */
 int main(void)
-{	int i;
+{
+	int chr = 97;
+	int i;
 
-	for (i = 'a'; i <= 'z'; ++i)
-		if (i == 'q' || i == 'e')
-			{ continue; }
+	for (i = 0; i < 26; i++)
+	{
+		if (chr == 'q' || chr == 'e')
+		{
+			chr++; }
 		else
-			{ putchar(i); }
-	{ putchar('\n'); }
+		{
+			putchar(chr);
+			chr++; }
+	}
+	putchar('\n');
 	return (0);
 }
